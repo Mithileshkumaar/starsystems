@@ -13,24 +13,30 @@
       #container {
             color: black;
             background-color: beige;
-            display: inline-block;
+
             top: 30px;
             box-sizing: border-box;
-            padding: 20px;
-            margin: 25px;
+
+            margin-top: 70px;
+
             height: auto;
             width: auto;
             border-radius: 30px;
             box-shadow: 10px 10px 10px 10px rgb(177, 176, 176);
-            position: absolute;
-
             text-align: center;
+
       }
 
       .forms {
             border-radius: 10px;
             padding: 10px;
-            margin-top: 20px;
+
+            margin-top: 40px;
+            justify-content: start;
+
+            columns: 3;
+            width: auto;
+
 
       }
 
@@ -55,8 +61,54 @@
                   </div>
                   <span style="font-size:20px">SIGN UP HERE</span>
                   <div class="forms">
-
                         <form action="">
+                              <div class="">
+                                    <label for="">Email</label>
+                                    <input type="text" placeholder="Enter Email" class="forms">
+                              </div>
+                              <div class="">
+                                    <label for="">Password</label>
+                                    <input type="password" placeholder="Enter password" class="forms">
+                              </div>
+                              <div>
+                                    <label for="">Phone number</label>
+                                    <input type="number" placeholder="Enter phone" class="forms">
+                              </div>
+                              <div>
+                                    <label for="">checkbox</label>
+                                    <input type="checkbox" class="forms">
+                              </div>
+                              <div>
+                                    <label for="">color</label>
+                                    <input type="color" class="forms">
+                              </div>
+
+                              <div>
+                                    <label for="">radio</label>
+                                    <input type="radio" placeholder="Enter password" class="forms">
+                              </div>
+                              <div>
+
+                                    <input type="range" placeholder="Enter password" class="forms">
+                              </div>
+                              <div>
+                                    <label for="">reset</label>
+                                    <input type="reset" placeholder="Enter password" class="forms">
+                              </div>
+                              <div>
+                                    <label for="">search</label>
+                                    <input type="search" placeholder="search" class="forms">
+                              </div>
+                              <div>
+                                    <label for="">tel</label>
+                                    <input type="tel" placeholder="Enter phone number" class="forms">
+                              </div>
+
+
+                        </form>
+
+
+                        <!-- <form action="">
                               <div>
                                     <label for="">Email</label>
                                     <input type="text" placeholder="Enter Email" class="forms">
@@ -76,15 +128,19 @@
                               </div>
 
 
-                              <input type="submit"
+                              <button type="submit"
                                     style="background-color: rgb(66, 66, 255); color: white; border: none; padding-right:20px; padding:10px 20px 10px 20px; margin: 25px; border-radius: 20px;">
+                                    submit</button>
 
-
-                        </form>
+                        </form> -->
 
 
                   </div>
+                  <div>
 
+                        <input type="submit" placeholder="Enter phone number" class="forms"
+                              style="background-color: rgb(58, 147, 237);color: white;">
+                  </div>
             </div>
 
 
