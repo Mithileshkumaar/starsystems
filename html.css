@@ -1,3 +1,11 @@
+    body {
+          background: linear-gradient(150deg, rgb(176, 39, 39) 20%, rgb(66, 49, 49) 50%);
+          background-repeat: no-repeat;
+          min-height: 100vh;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
     /* .container {
           margin: 20px;
           max-width: auto;

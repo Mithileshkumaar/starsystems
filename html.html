@@ -12,37 +12,40 @@
 <style>
       #container {
             color: black;
-            background-color: beige;
+            background-color: rgb(39, 31, 31);
 
             top: 30px;
             box-sizing: border-box;
 
-            margin-top: 70px;
 
+            margin: 60px 200px 40px 200px;
             height: auto;
             width: auto;
             border-radius: 30px;
-            box-shadow: 10px 10px 10px 10px rgb(177, 176, 176);
+
             text-align: center;
 
       }
 
-      .forms {
-            border-radius: 10px;
-            padding: 10px;
 
-            margin-top: 40px;
-            justify-content: start;
-
-            columns: 3;
-            width: auto;
-
-
-      }
 
       .button {
             border-radius: 20px;
             padding: 10px;
+      }
+
+      input {
+            padding: 10px;
+            border-radius: 20px;
+
+      }
+
+      span {
+
+
+            background: linear-gradient(to right, rgb(205, 41, 41) 20%, rgb(222, 215, 215) 100%);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
       }
 </style>
 
@@ -51,16 +54,94 @@
 
 
 
-            <div style="  border-radius:100%;color:black ; padding:  50px;">
-                  <div
-                        style="background-color: black; display: inline; border-radius: 20px; padding: 20px 20px ; color:white; margin:20px">
-                        <h1 style="display: inline;">WELCOME</h1>
+            <div style="  border-radius:100%;color:black ; padding:  50px; font-size: 20px;">
+                  <div style=" display: inline; border-radius: 20px ; color:white; margin:20px">
+                        <div style="font-size: 30px; letter-spacing: 10px; ">
+                              <span>
+                                    LOG
+                                    <label for="">IN</label>
+                              </span>
+                        </div>
+
+                        <form action="" style="padding: 20px;padding-top: 40px; columns: 2; text-align: start; ">
+
+                              <div class="forms " style="padding: 20px;  ">
+                                    <label for="" style="">First Name</label>
+                                    <input type="text" placeholder="Enter First name" style="margin-left: 30px;">
+                              </div>
+
+                              <div class="forms" style="padding: 20px;">
+                                    <label for="">First lastname</label>
+                                    <input type="text" placeholder="Enter Lastname">
+                              </div>
+                              <div class="forms" style="padding: 20px;">
+                                    <label for=""> Email</label>
+                                    <input type="email" placeholder="Enter Lastname" style="margin-left: 90px;">
+                              </div>
+                              <div class="forms" style="padding: 20px;">
+
+                                    <label for=""> Phone Number</label>
+                                    <input type="tel" placeholder="Enter Phone number">
+
+                              </div>
+                              <div class="forms" style="padding: 20px;">
+
+                                    <label for=""> Password</label>
+                                    <input type="tel" placeholder="Enter Password" style="margin-left: 60px;">
+                              </div>
+                              <div class="forms" style="padding: 20px;">
+
+                                    <label for=""> Confirm Password</label>
+                                    <input type="tel" placeholder="Enter Confirm Password" style="margin-left: 30px;">
+                              </div>
+                              <div class="forms" style="padding: 20px; margin-right: 70px;">
+                                    <label style="">Gender :</label>
+
+                                    <input type="radio" id="html" name="fav_language" style="margin-left: 30px;">
+                                    male
+                                    <input type="radio" id="css" name="fav_language">
+                                    female
 
 
 
+                              </div>
+
+
+                              <div class="forms" style="padding: 20px; margin-right: 70px;">
+
+                                    <label for="" style="margin-right: 30px;"> DOB</label>
+                                    <input type="date" placeholder="Enter Confirm Password" style="margin-left: 30px;">
+
+
+                              </div>
+
+                              <div class="forms" style="padding: 20px; margin-right: 70px;">
+
+                                    <label for="" style="margin-right: 30px;"> GitHub link</label>
+                                    <input type="url" placeholder="Enter GitHub link">
+
+
+                              </div>
+
+                              <div class="forms" style="padding: 20px; margin-right: 70px;">
+
+                                    <label for="" style="margin-right: 30px;"> Your Works: </label>
+                                    <input type="file" placeholder="">
+
+
+                              </div>
+
+                        </form>
+
+                        <input type="submit" name="" id=""
+                              style="background-color: rgb(226, 51, 51); color: white; font-size: 20px; border-color:transparent;">
                   </div>
-                  <span style="font-size:20px">SIGN UP HERE</span>
-                  <div class="forms">
+
+
+
+            </div>
+
+            <!-- <div class="forms">
                         <form action="">
                               <div class="">
                                     <label for="">Email</label>
@@ -108,7 +189,7 @@
                         </form>
 
 
-                        <!-- <form action="">
+                        <form action="">
                               <div>
                                     <label for="">Email</label>
                                     <input type="text" placeholder="Enter Email" class="forms">
@@ -132,16 +213,16 @@
                                     style="background-color: rgb(66, 66, 255); color: white; border: none; padding-right:20px; padding:10px 20px 10px 20px; margin: 25px; border-radius: 20px;">
                                     submit</button>
 
-                        </form> -->
+                        </form>
 
 
-                  </div>
-                  <div>
+                  </div> -->
+            <!-- <div>
 
                         <input type="submit" placeholder="Enter phone number" class="forms"
                               style="background-color: rgb(58, 147, 237);color: white;">
-                  </div>
-            </div>
+                  </div> -->
+      </div>
 
 
       </div>
