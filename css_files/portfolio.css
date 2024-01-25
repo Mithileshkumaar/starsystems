@@ -21,7 +21,7 @@
        justify-content: space-between;
        position: sticky;
        top: 0;
-       background-color: rgb(39, 31, 31);
+       background-color: rgb(57, 45, 45);
        padding: 0px 30px 0px 30px;
        border-radius: 20px;
 
@@ -36,8 +36,8 @@
  }
 
  li {
-       margin-left: 10px;
-       margin-right: 10px;
+       margin-left: 15px;
+       margin-right: 15px;
        font-size: 20px;
        list-style-type: none;
 
@@ -46,7 +46,7 @@
  li:hover {
        background-color: rgb(35, 133, 245);
        color: white;
-
+       padding: 0px 6px 0px 4px;
        border-radius: 20px;
        background-color: rgb(212, 44, 44);
 
@@ -59,7 +59,7 @@
  .about {
 
        margin-top: 20px;
-       background-color: rgb(29, 25, 25);
+       background-color: rgb(57, 45, 45);
        border-radius: 20px;
        display: flex;
        padding: 40px;
@@ -85,7 +85,7 @@
 
  .expertise {
        margin-top: 200px;
-       background-color: rgb(29, 25, 25);
+       background-color: rgb(57, 45, 45);
        border-radius: 20px;
 
        padding: 40px;
@@ -94,24 +94,55 @@
 
  .expertise-content {
        margin-top: 50px;
-       padding: 0px 30px 0px 30px;
+
        display: flex;
+
        justify-content: space-around;
 
  }
 
- .projects {
+ .expertise-card {
+
+       background-color: rgb(40, 31, 31);
+
+       padding: 70px;
+       filter: brightness(70%);
+       width: 250px;
+
+       justify-content: space-between;
+
+
+
+ }
+
+ .expertise-card:hover {
+
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       scale: 1.1;
+       filter: brightness(100%);
+
+
+ }
+
+
+ .contact {
        margin-top: 200px;
-       background-color: rgb(29, 25, 25);
+       background-color: rgb(57, 45, 45);
        border-radius: 20px;
-       display: flex;
        padding: 40px;
        justify-content: space-between;
  }
 
- .projects-content {
+ .contact-content {
        margin-top: 50px;
        padding: 0px 30px 0px 30px;
+       display: flex;
+       justify-content: space-evenly;
+ }
+
+ .contactme {
+       display: flex;
+       flex-direction: row;
  }
 
  .gid-item {
@@ -119,7 +150,7 @@
  }
 
  button {
-       width: 20vh;
+       width: 25vh;
 
  }
 
@@ -127,10 +158,7 @@
        scale: 1.2;
  }
 
- .expertise-card {
-       background: url('https: //www.google.com/url?sa=i&url=https%3A%2F%2Fsegwitz.com%2Fwhy-ui-ux-matters-for-mobile-apps-');
-       background-color: rgb(40, 31, 31);
-
-       padding: 100px;
-       flex-shrink: 3;
+ .media {
+       display: flex;
+       justify-content: space-around;
  }
