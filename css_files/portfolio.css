@@ -1,0 +1,136 @@
+ #container {
+
+
+       text-align: center;
+
+       margin: 20px;
+
+ }
+
+ body {
+
+       color: white;
+       background-color: whitesmoke;
+       background-repeat: no-repeat;
+       min-height: 100vh;
+       background: linear-gradient(130deg, rgb(176, 39, 39) 20%, rgb(66, 49, 49) 50%);
+ }
+
+ .navbar {
+       display: flex;
+       justify-content: space-between;
+       position: sticky;
+       top: 0;
+       background-color: rgb(39, 31, 31);
+       padding: 0px 30px 0px 30px;
+       border-radius: 20px;
+
+
+ }
+
+ ul {
+       display: flex;
+       justify-content: space-around;
+       padding: 3px;
+
+ }
+
+ li {
+       margin-left: 10px;
+       margin-right: 10px;
+       font-size: 20px;
+       list-style-type: none;
+
+ }
+
+ li:hover {
+       background-color: rgb(35, 133, 245);
+       color: white;
+
+       border-radius: 20px;
+       background-color: rgb(212, 44, 44);
+
+ }
+
+ .content {
+       padding: 20px
+ }
+
+ .about {
+
+       margin-top: 20px;
+       background-color: rgb(29, 25, 25);
+       border-radius: 20px;
+       display: flex;
+       padding: 40px;
+       justify-content: space-between;
+
+
+
+ }
+
+ .about-content {
+       margin-top: 50px;
+       padding: 0px 30px 0px 30px;
+       display: grid;
+       grid-row: span;
+ }
+
+
+ a {
+       color: white;
+       text-decoration: none;
+ }
+
+
+ .expertise {
+       margin-top: 200px;
+       background-color: rgb(29, 25, 25);
+       border-radius: 20px;
+
+       padding: 40px;
+
+ }
+
+ .expertise-content {
+       margin-top: 50px;
+       padding: 0px 30px 0px 30px;
+       display: flex;
+       justify-content: space-around;
+
+ }
+
+ .projects {
+       margin-top: 200px;
+       background-color: rgb(29, 25, 25);
+       border-radius: 20px;
+       display: flex;
+       padding: 40px;
+       justify-content: space-between;
+ }
+
+ .projects-content {
+       margin-top: 50px;
+       padding: 0px 30px 0px 30px;
+ }
+
+ .gid-item {
+       grid-row-end: 5;
+ }
+
+ button {
+       width: 20vh;
+
+ }
+
+ button:hover {
+       scale: 1.2;
+ }
+
+ .expertise-card {
+       background: url('https: //www.google.com/url?sa=i&url=https%3A%2F%2Fsegwitz.com%2Fwhy-ui-ux-matters-for-mobile-apps-');
+       background-color: rgb(40, 31, 31);
+
+       padding: 100px;
+       flex-shrink: 3;
+ }
