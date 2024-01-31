@@ -1,3 +1,75 @@
 body {
-      color: red;
+
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: rgb(231, 234, 237);
+}
+
+.navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 20px;
+      background-color: white;
+
+      padding: 10px;
+
+}
+
+.navbar h3 {
+      margin: 0;
+      font-size: 24px;
+}
+
+.navbar ul {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      margin: 0;
+}
+
+.navbar li {
+      margin-right: 20px;
+      font-size: 20px;
+}
+
+.container {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px 90px 0px 10px;
+}
+
+.card {
+      background-color: rgb(255, 255, 255);
+
+      color: black;
+      padding: 20px;
+      width: 80%;
+      max-width: 500px;
+      border-radius: 10px;
+      margin: 20px;
+}
+
+.card:hover {
+      scale: 1.1;
+      box-shadow: 2px 2px 2px 2px rgb(224, 222, 222);
+}
+
+.qty {
+      display: flex;
+      align-items: center;
+}
+
+.qty button {
+      border-radius: 20px;
+      border-style: none;
+      height: 30px;
+      width: 40px;
+      margin: 0 5px;
+      background-color: aliceblue;
+
 }
