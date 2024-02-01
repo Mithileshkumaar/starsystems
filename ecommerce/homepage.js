@@ -27,19 +27,59 @@ let cartItems = [];
 
 for (let i = 0; i < product.length; i++) {
       let number = 0;
-      cardList.innerHTML +=
-            `<div class="card">
-            <img src="${product[i].image}" height="200px"></img>
-            <h1> ${product[i].name}</h1>
-            <h2>Rs ${product[i].price}</h2>
-            <h2>Deliver within: ${product[i].delivery}</h2>
-            <div class="qty" style="display: flex;">
-                <div style="padding-top: 5px;">QTY:</div>
-                <button onclick="decrement(${i})" disabled id="decrementBtn${i}" style="margin: 0px 6px 0px 20px;">-</button>
-                <h4 id="Display${i}" style="margin: 0px 2px 0px 2px; padding-top: 5px;">0</h4>
-                <button onclick="increment(${i})" style="margin: 0px 2px 0px 6px;">+</button>
-            </div>
-        </div>`;
+
+      const card = document.createElement('div');
+      card.className = 'card';
+      const image = document.createElement('img');
+      image.src = product[i].image;
+      image.height = '200';
+      const name = document.createElement('h1');
+      name.textContent = product[i].name;
+      const price = document.createElement('h2');
+      price.textContent = `Rs ${product[i].price}`;
+      const delivery = document.createElement('h2');
+      delivery.textContent = `Deliver within: ${product[i].delivery}`;
+      const qtyDiv = document.createElement('div');
+      qtyDiv.className = 'qty';
+      const qtyLabel = document.createElement('div');
+      qtyLabel.textContent = 'QTY:';
+      const decrementBtn = document.createElement('button');
+      decrementBtn.textContent = '-';
+      decrementBtn.onclick = () => decrement(i);
+      decrementBtn.disabled = true;
+      decrementBtn.id = `decrementBtn${i}`;
+      const displayQty = document.createElement('h4');
+      displayQty.textContent = '0';
+      displayQty.id = `Display${i}`;
+      const incrementBtn = document.createElement('button');
+      incrementBtn.textContent = '+';
+      incrementBtn.onclick = () => increment(i);
+
+      qtyDiv.appendChild(qtyLabel);
+      qtyDiv.appendChild(decrementBtn);
+      qtyDiv.appendChild(displayQty);
+      qtyDiv.appendChild(incrementBtn);
+
+      card.appendChild(image);
+      card.appendChild(name);
+      card.appendChild(price);
+      card.appendChild(delivery);
+      card.appendChild(qtyDiv);
+
+      cardList.appendChild(card);
+      //       cardList.innerHTML +=
+      //             `<div class="card">
+      //             <img src="${product[i].image}" height="200px"></img>
+      //             <h1> ${product[i].name}</h1>
+      //             <h2>Rs ${product[i].price}</h2>
+      //             <h2>Deliver within: ${product[i].delivery}</h2>
+      //             <div class="qty" style="display: flex;">
+      //                 <div style="padding-top: 5px;">QTY:</div>
+      //                 <button onclick="decrement(${i})" disabled id="decrementBtn${i}" style="margin: 0px 6px 0px 20px;">-</button>
+      //                 <h4 id="Display${i}" style="margin: 0px 2px 0px 2px; padding-top: 5px;">0</h4>
+      //                 <button onclick="increment(${i})" style="margin: 0px 2px 0px 6px;">+</button>
+      //             </div>
+      //         </div>`;
 }
 
 function updatenumber(index) {
@@ -104,12 +144,12 @@ function renderCartItems() {
 
 function press() {
       // document.getElementById("dropdown").addEventListener("click", myfunction());
+
       document.getElementById('dropdown').classList.toggle("dropdown-styles");
       cartList.innerHTML +=
             `<li>${item.product.name} - Quantity: ${item.quantity}</li>`;
+
+
 }
 
 
-// function myfunction() {
-//       document.getElementById("dropdown").style.display = 'none';
-// }
