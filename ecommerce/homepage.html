@@ -8,6 +8,12 @@
       <link rel="stylesheet" href="./homepage.css">
 
 </head>
+<style>
+      .dropdown-styles {
+            display: none;
+
+      }
+</style>
 
 <body>
       <!-- navbar -->
@@ -18,16 +24,25 @@
             <div>
                   <ul style="display: flex; ">
                         <li>
-                              cart: <span id="total-count">0</span>
+                              <button onclick="press()">cart: </button>
+                              <div id="dropdown">
+                                    <ul id="cart-item">
+                                          <li id="cart-list">
+
+                                          </li>
+                                    </ul>
+                              </div>
+                              <span id="total-count">0</span>
 
                         </li>
                         <li>Username</li>
+
+
 
                   </ul>
             </div>
 
       </div>
-
       <!-- content -->
       <div class="container">
 
@@ -38,7 +53,11 @@
             </div>
 
 
+            <div id="cart-item">
+                  <ul id="cart-list">
 
+                  </ul>
+            </div>
 
 
 
