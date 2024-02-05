@@ -1,19 +1,19 @@
 let product = [
       {
             name: "Iphone 13",
-            price: "11,599",
+            price: 11599,
             delivery: '2nd feb',
             image: "../assests/apple-iphone-13-512-gb-starlight-digital-o491997710-p590798565-1-202203092111.webp"
       },
       {
             name: "Titan watch",
-            price: "19,599",
+            price: 19599,
             delivery: '10th feb',
             image: "../assests/1698KM02_1.webp"
       },
       {
             name: "MacBook Air",
-            price: "89,599",
+            price: 89000,
             delivery: '13th feb',
             image: "../assests/mac-card-40-macbook-air-202310_FMT_WHH.jpeg"
       }
@@ -127,7 +127,7 @@ function updateCartItems(product, quantity) {
             cartItems[index].quantity = quantity;
       }
       else {
-            cartItems.push({ product: product, quantity: quantity });
+            cartItems.push({ product: product, quantity: quantity, });
       }
       renderCartItems();
 }
@@ -136,7 +136,9 @@ function renderCartItems() {
       cartItems.forEach(item => {
             if (item.quantity > 0) {
                   cartList.innerHTML +=
-                        `<li>${item.product.name} - Quantity: ${item.quantity}</li>`;
+                        `<li>${item.product.name} - Quantity: ${item.quantity}</li>
+
+                        `;
             }
       });
 }
